@@ -1,0 +1,43 @@
+/* 헤더의 까만 배경을 스크롤 시에만 뜨도록 하고 싶은데 JS가 필요한듯. JS를 배우게 되면 보강해보자. */
+.header {
+    width: 100%;
+    height: 80px;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,1) 5%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 100%); */
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 5%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.2) 95%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.header__content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    padding-left: 50px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.profile{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.logo:hover,
+.profile:hover{
+    cursor: pointer;
+}
+
+.header__profile{
+    padding-right: 50px;
+}
